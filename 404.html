@@ -11,74 +11,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#F6F8FB;--panel:#FFFFFF;--ink:#16232F;--ink-2:#5D6E7E;--ink-3:#8998A6;
-    --rule:#E4EAF1;--accent:#2B5FA8;--accent-deep:#1B406F;--accent-soft:#EDF3FB;
-    --font:"Manrope",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-    --pad:clamp(1.25rem,5vw,3rem);
-  }
-  *,*::before,*::after{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);
-    font-size:1rem;line-height:1.65;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;
-    display:flex;flex-direction:column;
-  }
-  a{color:var(--accent);text-decoration:none;transition:color .18s ease}
-  a:hover{color:var(--accent-deep)}
-  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-  .wrap{max-width:640px;margin:0 auto;padding:0 var(--pad);width:100%}
-  .ico{width:1.15em;height:1.15em;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;
-    stroke-linecap:round;stroke-linejoin:round}
-
-  .topbar{background:var(--panel);border-bottom:1px solid var(--rule)}
-  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;
-    padding-top:.9rem;padding-bottom:.9rem;max-width:760px}
-  .brand{font-weight:700;letter-spacing:-.025em;color:var(--ink)}
-  .brand:hover{color:var(--accent)}
-  .back{font-size:.87rem;font-weight:600}
-
-  main{flex:1 0 auto;display:flex;align-items:center;
-    padding-top:clamp(2.5rem,8vw,5rem);padding-bottom:clamp(3rem,8vw,5rem)}
-  .card{text-align:center}
-
-  .code{
-    display:inline-block;font-size:clamp(3.75rem,3rem + 8vw,6rem);font-weight:800;
-    line-height:1;letter-spacing:-.06em;color:var(--accent);margin:0 0 1rem;
-  }
-  h1{font-size:clamp(1.5rem,1.25rem + 1.2vw,1.95rem);font-weight:700;letter-spacing:-.03em;margin:0 0 .75rem}
-  .lede{color:var(--ink-2);margin:0 auto 2rem;max-width:42ch}
-
-  .actions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin:0 0 2.5rem;
-    list-style:none;padding:0}
-  .actions a{
-    display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:600;
-    padding:.65rem 1.15rem;border-radius:999px;border:1px solid var(--rule);
-    background:var(--panel);color:var(--ink);
-    transition:border-color .18s ease,color .18s ease,transform .18s ease
-  }
-  .actions a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
-  .actions a .ico{color:var(--accent)}
-  .actions .primary a{background:var(--accent);border-color:var(--accent);color:#fff}
-  .actions .primary a .ico{color:#fff}
-  .actions .primary a:hover{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
-
-  .help{background:var(--accent-soft);border-radius:16px;padding:1.25rem 1.5rem;text-align:left}
-  .help p{margin:0 0 .55rem;font-size:.9rem;color:var(--ink-2)}
-  .help p:last-child{margin-bottom:0}
-  .help a{font-weight:600}
-  .help .k{font-weight:700;color:var(--ink);letter-spacing:-.02em}
-
-  footer{background:var(--panel);border-top:1px solid var(--rule);flex:none;
-    padding-top:1.6rem;padding-bottom:1.8rem;font-size:.81rem;color:var(--ink-3)}
-  footer .wrap{max-width:760px}
-  footer p{margin:0 0 .3rem}
-  footer address{font-style:normal;display:inline}
-  footer .sep{padding:0 .4rem;color:var(--ink-3)}
-</style>
+<link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body>
+<body class="p-404">
 
 <div class="topbar">
   <div class="wrap">

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rommel Risco — Soluciones informáticas e integraciones | Lima, Perú</title>
+<title>Rommel Risco — Soluciones informáticas e integraciones</title>
 <meta name="description" content="Rommel Risco — soluciones informáticas, soporte de aplicaciones e integraciones en Lima, Perú. Integraciones de WhatsApp Business API, soporte de plataformas SaaS, automatización de operaciones e infraestructura cloud. Contacto: hello@rommelrisco.xyz · +51 986 314 668.">
 <meta name="author" content="Rommel Risco">
 <meta name="theme-color" content="#2B5FA8">
@@ -24,239 +24,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-  :root{
-    --paper:#F6F8FB;
-    --panel:#FFFFFF;
-    --ink:#16232F;
-    --ink-2:#5D6E7E;
-    --ink-3:#8998A6;
-    --rule:#E4EAF1;
-    --accent:#2B5FA8;
-    --accent-deep:#1B406F;
-    --accent-soft:#EDF3FB;
-
-    --font:"Manrope",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-
-    --r-sm:10px;
-    --r-md:16px;
-    --r-lg:22px;
-
-    --shadow:0 1px 2px rgba(22,35,47,.04),0 10px 30px -18px rgba(22,35,47,.22);
-
-    --pad:clamp(1.25rem,5vw,4rem);
-    --maxw:1080px;
-  }
-
-  *,*::before,*::after{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--font);
-    font-size:clamp(1rem,.97rem + .15vw,1.05rem);
-    line-height:1.62;
-    letter-spacing:-.005em;
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:var(--accent);text-decoration:none;transition:color .18s ease,opacity .18s ease}
-  a:hover{color:var(--accent-deep)}
-  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-  img{max-width:100%;display:block}
-
-  .skip{position:absolute;left:-9999px;top:0}
-  .skip:focus{left:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:60}
-
-  .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
-
-  /* ---------- iconos ---------- */
-  .ico{
-    width:1.25em;height:1.25em;flex:none;
-    fill:none;stroke:currentColor;stroke-width:1.6;
-    stroke-linecap:round;stroke-linejoin:round;
-  }
-  .sprite{position:absolute;width:0;height:0;overflow:hidden}
-
-  /* ---------- barra superior ---------- */
-  .topbar{
-    position:sticky;top:0;z-index:40;
-    background:rgba(246,248,251,.82);
-    backdrop-filter:saturate(1.4) blur(10px);
-    -webkit-backdrop-filter:saturate(1.4) blur(10px);
-    border-bottom:1px solid var(--rule);
-  }
-  .topbar__inner{
-    display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.5rem;
-    padding-top:.7rem;padding-bottom:.7rem;
-    font-size:.82rem;color:var(--ink-2);
-  }
-  .topbar__status{display:inline-flex;align-items:center;gap:.55rem;color:var(--ink);font-weight:600}
-  .topbar a{display:inline-flex;align-items:center;gap:.4rem;font-weight:500}
-  .dot{
-    width:.5rem;height:.5rem;border-radius:50%;background:var(--accent);
-    box-shadow:0 0 0 0 rgba(43,95,168,.5);animation:pulse 3s ease-out infinite
-  }
-  @keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(43,95,168,.45)}
-    70%{box-shadow:0 0 0 .5rem rgba(43,95,168,0)}
-    100%{box-shadow:0 0 0 0 rgba(43,95,168,0)}
-  }
-  @media (max-width:38rem){.topbar__tel{display:none}}
-
-  /* ---------- tipografía ---------- */
-  h1,h2,h3{letter-spacing:-.028em;font-weight:700;margin:0}
-  h2{font-size:clamp(1.4rem,1.15rem + 1vw,1.85rem);line-height:1.2;margin-bottom:1.4rem}
-  h3{font-size:1.02rem;font-weight:600;letter-spacing:-.015em;margin-bottom:.3rem}
-  p{margin:0 0 1rem}
-
-  .kicker{
-    display:block;font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-    color:var(--ink-3);margin:0 0 .5rem;
-  }
-
-  /* ---------- portada ---------- */
-  .hero{position:relative;overflow:hidden}
-  .hero::before{
-    content:"";position:absolute;top:-30%;right:-10%;width:70vw;height:70vw;max-width:760px;max-height:760px;
-    background:radial-gradient(circle at 50% 50%,rgba(43,95,168,.12),rgba(43,95,168,0) 62%);
-    pointer-events:none;
-  }
-  .hero__inner{
-    position:relative;
-    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,13.5rem);
-    gap:clamp(1.75rem,4vw,3.25rem);align-items:start;
-    padding-top:clamp(2.75rem,7vw,5rem);padding-bottom:clamp(2.5rem,6vw,4rem);
-  }
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:.5rem;
-    font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
-    color:var(--accent);background:var(--accent-soft);
-    padding:.4rem .8rem;border-radius:999px;margin:0 0 1.25rem;
-  }
-  h1{
-    font-size:clamp(2.5rem,1.6rem + 4.6vw,4.1rem);line-height:1.02;font-weight:700;
-    margin-bottom:.65rem;
-  }
-  .role{
-    font-size:clamp(1.05rem,.98rem + .5vw,1.3rem);font-weight:500;line-height:1.35;
-    color:var(--accent);margin:0 0 1.35rem;max-width:24ch;letter-spacing:-.02em;
-  }
-  .lede{font-size:clamp(1rem,.97rem + .25vw,1.1rem);color:var(--ink-2);max-width:46ch;margin-bottom:0}
-
-  .portrait{margin:0;width:100%;max-width:13.5rem;justify-self:center}
-  .portrait img{
-    width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;
-    border-radius:50%;border:1px solid var(--rule);
-    box-shadow:0 14px 34px -20px rgba(22,35,47,.4);
-  }
-  @media (max-width:52rem){
-    .hero__inner{grid-template-columns:1fr}
-    .portrait{order:-1;max-width:8.5rem;justify-self:start}
-  }
-
-  /* ---------- vías de contacto ---------- */
-  .channels{display:flex;flex-wrap:wrap;gap:.55rem;list-style:none;margin:1.9rem 0 0;padding:0}
-  .channels a{
-    display:inline-flex;align-items:center;gap:.5rem;
-    font-size:.88rem;font-weight:600;color:var(--ink);
-    padding:.6rem 1rem;background:var(--panel);border:1px solid var(--rule);
-    border-radius:999px;box-shadow:0 1px 2px rgba(22,35,47,.03);
-    transition:border-color .18s ease,color .18s ease,transform .18s ease
-  }
-  .channels a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
-  .channels .ico{color:var(--accent)}
-  .channels--primary a{background:var(--accent);border-color:var(--accent);color:#fff}
-  .channels--primary a:hover{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
-
-  /* ---------- secciones ---------- */
-  .block{
-    padding-top:clamp(2.5rem,6vw,4.25rem);padding-bottom:clamp(2.5rem,6vw,4.25rem);
-    border-top:1px solid var(--rule);
-  }
-
-  /* ---------- servicios ---------- */
-  .services{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.85rem;
-    list-style:none;margin:0;padding:0;
-  }
-  .services > li{
-    background:var(--panel);border:1px solid var(--rule);border-radius:var(--r-md);
-    padding:1.5rem 1.35rem;text-align:center;
-    transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease;
-  }
-  .services > li:hover{border-color:#C9D9EE;transform:translateY(-2px);box-shadow:var(--shadow)}
-  .services .badge{
-    display:inline-grid;place-items:center;width:3.25rem;height:3.25rem;
-    background:var(--accent-soft);color:var(--accent);border-radius:50%;margin-bottom:1rem;
-  }
-  .services .badge .ico{width:1.55rem;height:1.55rem;stroke-width:1.5}
-  .services p{margin:0;font-size:.88rem;color:var(--ink-2);line-height:1.5}
-
-  /* ---------- filas con icono ---------- */
-  .rows{list-style:none;margin:0;padding:0;display:grid;gap:.15rem}
-  .rows > li{display:flex;align-items:flex-start;gap:.9rem;padding:.8rem 0;border-bottom:1px solid var(--rule)}
-  .rows > li:last-child{border-bottom:0}
-  .rows .ico{color:var(--accent);margin-top:.18rem;width:1.15rem;height:1.15rem}
-  .rows .k{display:block;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
-  .rows .v{display:block;font-size:.95rem;color:var(--ink)}
-
-  /* ---------- trayectoria ---------- */
-  .track{list-style:none;margin:0;padding:0}
-  .track > li{
-    display:grid;grid-template-columns:minmax(0,7.5rem) minmax(0,1fr);gap:1.25rem;
-    padding:1.15rem 0;border-bottom:1px solid var(--rule)
-  }
-  .track > li:first-child{padding-top:0}
-  .track > li:last-child{border-bottom:0;padding-bottom:0}
-  .track .when{font-size:.8rem;font-weight:600;color:var(--ink-3);padding-top:.2rem;letter-spacing:-.01em}
-  .track .org{display:block;font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:.25rem;letter-spacing:-.02em}
-  .track .what{margin:0;font-size:.9rem;color:var(--ink-2);line-height:1.55}
-  @media (max-width:34rem){.track > li{grid-template-columns:1fr;gap:.3rem}}
-
-  /* ---------- stack ---------- */
-  .stack{list-style:none;margin:0;padding:0;display:grid;gap:1.35rem}
-  .stack .group{display:flex;align-items:center;gap:.55rem;margin-bottom:.6rem}
-  .stack .group .ico{color:var(--accent);width:1.05rem;height:1.05rem}
-  .stack .group span{font-size:.74rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
-  .chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
-  .chips li{
-    font-size:.82rem;font-weight:500;padding:.35rem .75rem;border-radius:999px;
-    background:var(--panel);border:1px solid var(--rule);color:var(--ink-2)
-  }
-
-  /* ---------- pie ---------- */
-  .site-footer{background:var(--panel);border-top:1px solid var(--rule);margin-top:clamp(2rem,5vw,3.5rem)}
-  .site-footer__inner{
-    padding-top:clamp(2rem,4vw,2.75rem);padding-bottom:clamp(2rem,4vw,2.75rem);
-    font-size:.87rem;line-height:1.7;color:var(--ink-2);
-  }
-  .site-footer p{margin:0 0 .3rem}
-  .site-footer .f-name{font-size:1rem;font-weight:700;letter-spacing:-.022em;color:var(--ink);margin-bottom:.5rem}
-  .site-footer address{font-style:normal;display:inline}
-  .site-footer .sep{color:var(--ink-3);padding:0 .45rem}
-  .site-footer .f-links{margin-top:.95rem}
-  .site-footer .f-links a{font-weight:600}
-  .site-footer .f-legal{
-    margin:1.15rem 0 0;padding-top:1.15rem;border-top:1px solid var(--rule);
-    font-size:.79rem;color:var(--ink-3)
-  }
-  @media (max-width:30rem){
-    .site-footer .sep{display:block;height:0;overflow:hidden;padding:0}
-  }
-
-  @media (prefers-reduced-motion:reduce){
-    *{animation:none!important;transition:none!important}
-    html{scroll-behavior:auto}
-  }
-  @media (prefers-reduced-motion:no-preference){
-    .reveal{animation:up .6s cubic-bezier(.2,.7,.3,1) both}
-    .reveal--2{animation-delay:.09s}
-    @keyframes up{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-  }
-</style>
+<link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body>
+<body class="p-home">
 <a class="skip" href="#contenido">Ir al contenido</a>
 
 <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -278,6 +48,7 @@
   <symbol id="i-activity" viewBox="0 0 24 24"><path d="M3.5 12h4l2.5-7 4 14 2.5-7h4"/></symbol>
   <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 16.5 4 12l4.5-4.5"/><path d="M15.5 7.5 20 12l-4.5 4.5"/><path d="M13.5 4.5l-3 15"/></symbol>
   <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.6 7.5 20.5l4.5-2.3 4.5 2.3-1.1-6.9"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11m0-11-11 11"/></symbol>
 </svg>
 
 <div class="topbar">
@@ -441,15 +212,30 @@
     <p class="f-name">Rommel Risco</p>
     <p><address>Av. Colonial 2703, Lima, Perú</address></p>
     <p>
-      <a href="tel:+51986314668">+51 986 314 668</a><span class="sep">·</span><a href="mailto:hello@rommelrisco.xyz">hello@rommelrisco.xyz</a><span class="sep">·</span>
+      <a href="tel:+51986314668">+51 986 314 668</a><span class="sep">·</span><a href="mailto:hello@rommelrisco.xyz">hello@rommelrisco.xyz</a>
     </p>
-    <p>Lunes a viernes, 09:00 – 18:00 (UTC−05) · Perú y clientes remotos internacionales</p>
+    <p>Lunes a viernes, 09:00 – 18:00 (UTC−05)</p>
     <p class="f-links">
       <a href="/privacidad.html">Política de privacidad</a><span class="sep">·</span><a href="/terminos.html">Términos del servicio</a><span class="sep">·</span><a href="/privacidad.html#eliminacion">Eliminación de datos</a>
     </p>
     <p class="f-legal">© <span id="year">2026</span> Rommel Risco · Persona natural con negocio domiciliada en Lima, Perú. El nombre comercial y el nombre legal del negocio son idénticos.</p>
   </div>
 </footer>
+
+<div class="wa">
+  <div class="wa__panel" id="wa-panel" hidden>
+    <p class="kicker">¿En qué puedo ayudarte?</p>
+    <ul class="wa__list">
+      <li><a href="https://wa.me/51986314668?text=¡Hola, Rommel! Quiero implementar WhatsApp API en mi empresa.">Quiero implementar WhatsApp API en mi empresa.</a></li>
+      <li><a href="https://wa.me/51986314668?text=¡Hola, Rommel! Necesito un sitio web para mi negocio.">Necesito un sitio web para mi negocio.</a></li>
+      <li><a href="https://wa.me/51986314668?text=¡Hola, Rommel! Tengo un problema con la tecnología de mi negocio.">Tengo un problema con la tecnología de mi negocio.</a></li>
+    </ul>
+  </div>
+  <button class="wa__btn" type="button" id="wa-toggle" aria-expanded="false" aria-controls="wa-panel" aria-label="Abrir opciones de contacto por WhatsApp">
+    <svg class="ico ico--open" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <svg class="ico ico--close" aria-hidden="true"><use href="#i-close"/></svg>
+  </button>
+</div>
 
 <script type="application/ld+json">
 {
@@ -531,6 +317,28 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  (function(){
+    var wrap = document.querySelector('.wa');
+    var btn = document.getElementById('wa-toggle');
+    var panel = document.getElementById('wa-panel');
+
+    function setOpen(open){
+      panel.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', (open ? 'Cerrar' : 'Abrir') + ' opciones de contacto por WhatsApp');
+    }
+
+    btn.addEventListener('click', function(){ setOpen(panel.hidden); });
+
+    document.addEventListener('click', function(e){
+      if(!panel.hidden && !wrap.contains(e.target)) setOpen(false);
+    });
+
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && !panel.hidden){ setOpen(false); btn.focus(); }
+    });
+  })();
 </script>
 </body>
 </html>
